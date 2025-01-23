@@ -1,2 +1,16 @@
 # tech_market
-Greetings everyone. I am pleased to present an application I have developed, which functions as an online store specializing in digital devices, including laptops, mobile phones, and related products. Developed with Flutter. Preview available on my Instagram page [Instagram handle/link]. I hope you find it useful. 
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
