@@ -1,6 +1,8 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class login extends StatelessWidget {
   const login({super.key});
 
@@ -12,7 +14,7 @@ class login extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF0001FC),
+        backgroundColor: const Color(0xFF0001FC),
         body: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -20,7 +22,7 @@ class login extends StatelessWidget {
               SizedBox(
                 height: height / 16,
               ),
-              Text(
+              const Text(
                 'Create an account',
                 style: white_bold,
               ),
@@ -28,7 +30,7 @@ class login extends StatelessWidget {
                 height: height / 5,
               ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'Email',
                   labelStyle: TextStyle(color: Colors.white),
                   hintText: 'Enter your email',
@@ -40,12 +42,12 @@ class login extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.white, width: 2.0),
                   ),
                 ),
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
                 keyboardType: TextInputType.emailAddress,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'Password',
                   labelStyle: TextStyle(color: Colors.white),
                   hintText: 'Enter your password',
@@ -57,10 +59,10 @@ class login extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.white, width: 2.0),
                   ),
                 ),
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
                 obscureText: true,
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -70,7 +72,7 @@ class login extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Validate',
                       style: blue_bold,
@@ -78,13 +80,13 @@ class login extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Already have an account ? ',
                     style: TextStyle(color: Color(0xFFFBDF00)),
                   ),
@@ -92,7 +94,7 @@ class login extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Text(
+                    child: const Text(
                       'Sign-up',
                       style: TextStyle(
                           color: Color(0xFFFBDF00),
@@ -101,10 +103,10 @@ class login extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -113,12 +115,12 @@ class login extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               InkWell(
                 onTap: () {},
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(

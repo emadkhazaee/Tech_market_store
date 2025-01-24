@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_market/screens/intro_screens/Second.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class first extends StatelessWidget {
   const first({super.key});
 
@@ -13,7 +14,7 @@ class first extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF0001FC),
+        backgroundColor: const Color(0xFF0001FC),
         body: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -27,10 +28,10 @@ class first extends StatelessWidget {
                   Image.asset('assets/images/earth.png'),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -39,10 +40,10 @@ class first extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -51,15 +52,15 @@ class first extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => second()));
+                      MaterialPageRoute(builder: (context) => const second()));
                 },
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(

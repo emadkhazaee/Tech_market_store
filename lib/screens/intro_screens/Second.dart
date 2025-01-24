@@ -1,7 +1,9 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:tech_market/screens/intro_screens/Third.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class second extends StatelessWidget {
   const second({super.key});
 
@@ -13,7 +15,7 @@ class second extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF0001FC),
+        backgroundColor: const Color(0xFF0001FC),
         body: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -22,7 +24,7 @@ class second extends StatelessWidget {
                 'assets/images/computer_intro.png',
                 fit: BoxFit.cover,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -31,10 +33,10 @@ class second extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -43,15 +45,15 @@ class second extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => third()));
+                      MaterialPageRoute(builder: (context) => const third()));
                 },
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(

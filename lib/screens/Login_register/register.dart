@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_market/screens/Login_register/Login.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class register extends StatelessWidget {
   const register({super.key});
 
@@ -13,7 +14,7 @@ class register extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF0001FC),
+        backgroundColor: const Color(0xFF0001FC),
         body: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -21,7 +22,7 @@ class register extends StatelessWidget {
               SizedBox(
                 height: height / 16,
               ),
-              Text(
+              const Text(
                 'Create an account',
                 style: white_bold,
               ),
@@ -29,7 +30,7 @@ class register extends StatelessWidget {
                 height: height / 9,
               ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'full name',
                   labelStyle: TextStyle(color: Colors.white),
                   hintText: 'Enter your name',
@@ -41,12 +42,12 @@ class register extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.white, width: 2.0),
                   ),
                 ),
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
                 keyboardType: TextInputType.name,
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'Email',
                   labelStyle: TextStyle(color: Colors.white),
                   hintText: 'Enter your email',
@@ -58,12 +59,12 @@ class register extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.white, width: 2.0),
                   ),
                 ),
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
                 keyboardType: TextInputType.emailAddress,
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'Password',
                   labelStyle: TextStyle(color: Colors.white),
                   hintText: 'Enter your password',
@@ -75,10 +76,10 @@ class register extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.white, width: 2.0),
                   ),
                 ),
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
                 obscureText: true,
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -88,7 +89,7 @@ class register extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Validate',
                       style: blue_bold,
@@ -96,22 +97,24 @@ class register extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Already have an account ? ',
                     style: TextStyle(color: Color(0xFFFBDF00)),
                   ),
                   InkWell(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => login()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const login()));
                     },
-                    child: Text(
+                    child: const Text(
                       'Login ',
                       style: TextStyle(
                           color: Color(0xFFFBDF00),
@@ -120,10 +123,10 @@ class register extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -132,12 +135,12 @@ class register extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               InkWell(
                 onTap: () {},
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(

@@ -1,8 +1,10 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:tech_market/screens/Login_register/Login.dart';
 import 'package:tech_market/screens/Login_register/register.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class connexion extends StatelessWidget {
   const connexion({super.key});
 
@@ -14,7 +16,7 @@ class connexion extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF0001FC),
+        backgroundColor: const Color(0xFF0001FC),
         body: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -22,7 +24,7 @@ class connexion extends StatelessWidget {
               SizedBox(
                 height: height / 16,
               ),
-              Text(
+              const Text(
                 'Connexion',
                 style: white_bold,
               ),
@@ -31,8 +33,10 @@ class connexion extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => register()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const register()));
                 },
                 child: Container(
                   height: 50,
@@ -41,7 +45,7 @@ class connexion extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Create an account',
                       style: blue_bold,
@@ -49,7 +53,7 @@ class connexion extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               InkWell(
@@ -69,10 +73,10 @@ class connexion extends StatelessWidget {
                         'assets/images/Google.png',
                         fit: BoxFit.cover,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
-                      Text(
+                      const Text(
                         'Connect with Google',
                         style: TextStyle(
                             color: Color(0xFF555555),
@@ -82,7 +86,7 @@ class connexion extends StatelessWidget {
                   )),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               InkWell(
@@ -91,7 +95,7 @@ class connexion extends StatelessWidget {
                   height: 50,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0xFF415A93),
+                    color: const Color(0xFF415A93),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: Center(
@@ -102,10 +106,10 @@ class connexion extends StatelessWidget {
                         'assets/images/Facebook.png',
                         fit: BoxFit.cover,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
-                      Text(
+                      const Text(
                         'Connect with Facebook',
                         style: TextStyle(
                             color: Color.fromARGB(255, 255, 255, 255),
@@ -115,22 +119,24 @@ class connexion extends StatelessWidget {
                   )),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Already have an account ? ',
                     style: TextStyle(color: Color(0xFFFBDF00)),
                   ),
                   InkWell(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => login()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const login()));
                     },
-                    child: Text(
+                    child: const Text(
                       'Login ',
                       style: TextStyle(
                           color: Color(0xFFFBDF00),
@@ -139,10 +145,10 @@ class connexion extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -151,12 +157,12 @@ class connexion extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               InkWell(
                 onTap: () {},
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(

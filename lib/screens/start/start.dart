@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_market/screens/intro_screens/first.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class start extends StatelessWidget {
   const start({super.key});
 
@@ -12,13 +13,13 @@ class start extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF0001FC),
+        backgroundColor: const Color(0xFF0001FC),
         body: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -30,7 +31,7 @@ class start extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -46,7 +47,7 @@ class start extends StatelessWidget {
               InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => first()));
+                      MaterialPageRoute(builder: (context) => const first()));
                 },
                 child: Container(
                   height: 50,
@@ -55,7 +56,7 @@ class start extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Let’s start',
                       style: blue_bold,
@@ -63,12 +64,12 @@ class start extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               InkWell(
                 onTap: () {},
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
