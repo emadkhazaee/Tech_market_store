@@ -119,9 +119,7 @@ class ProductItem extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              // حذف height از Image.asset
-              Image.asset(image,
-                  fit: BoxFit.cover, height: 120), // ارتفاع به دلخواه شما
+              Image.asset(image, fit: BoxFit.cover, height: 120),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(

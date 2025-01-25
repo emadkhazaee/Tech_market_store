@@ -33,7 +33,6 @@ class AccountScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // Header with spacing
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -46,8 +45,7 @@ class AccountScreen extends StatelessWidget {
                     children: [
                       const CircleAvatar(
                         radius: 20.0,
-                        backgroundImage: AssetImage(
-                            'assets/images/pic.png'), // Replace with your image path
+                        backgroundImage: AssetImage('assets/images/pic.png'),
                       ),
                       const SizedBox(width: 16.0),
                       Column(
@@ -68,10 +66,7 @@ class AccountScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
-              const SizedBox(height: 16.0), // Spacing between header and list
-
-              // List of account items
+              const SizedBox(height: 16.0),
               Expanded(
                 child: ListView(
                   children: [

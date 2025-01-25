@@ -1,6 +1,6 @@
 # tech_market
 
-Digital Products Store.
+A new Flutter project.
 
 ## Getting Started
 
