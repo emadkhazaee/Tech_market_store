@@ -68,7 +68,24 @@ flutter:
     - assets/images/off.png
     - assets/images/Google.png
     - assets/images/Facebook.png
-
+    - assets/images/Monitor.png
+    - assets/images/Smartphone.png
+    - assets/images/speaker.png
+    - assets/images/selling.png
+    - assets/images/Categories.png
+    - assets/images/Gifts.png
+    - assets/images/Favorites.png
+    - assets/images/Product.png
+    - assets/images/New.png
+    - assets/images/Validation.png
+    - assets/images/pic.png
+    - assets/images/laptop1.png
+    - assets/images/laptop2.png
+    - assets/images/laptop3.png
+    - assets/images/laptop3.png
+    - assets/images/laptop4.png
+    - assets/images/laptop5.png
+    - assets/images/laptop6.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
