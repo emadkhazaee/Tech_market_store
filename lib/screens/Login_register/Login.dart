@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:tech_market/screens/home/home.dart';
 import 'package:tech_market/tools/text_style.dart';
 
 // ignore: camel_case_types
@@ -63,7 +64,10 @@ class login extends StatelessWidget {
               ),
               const SizedBox(height: 40),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const home()));
+                },
                 child: Container(
                   height: 50,
                   width: double.infinity,

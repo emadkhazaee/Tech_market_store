@@ -13,7 +13,7 @@ class home extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFFDFEFF),
       body: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -35,7 +35,7 @@ class home extends StatelessWidget {
   }
 
   Widget _buildHeader() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [Text('Home', style: black_title)],
     );
@@ -63,8 +63,8 @@ class home extends StatelessWidget {
   }
 
   Widget _buildProductInfo() {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         Padding(
           padding: EdgeInsets.only(top: 30, left: 20),
           child: Text('Bose Home Speaker', style: white),

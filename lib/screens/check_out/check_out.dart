@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_market/tools/text_style.dart';
 import 'package:tech_market/screens/check_out/success.dart';
 
+// ignore: camel_case_types
 class check_out extends StatefulWidget {
   const check_out({super.key});
 
@@ -25,7 +26,7 @@ class _CheckoutState extends State<check_out> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Check out', style: black_bold),
+                const Text('Check out', style: black_bold),
                 const SizedBox(height: 40),
                 Row(
                   children: [
@@ -56,8 +57,8 @@ class _CheckoutState extends State<check_out> {
                               width: 97,
                             ),
                             const SizedBox(height: 20),
-                            Text('i phone 11 pro', style: black),
-                            Text('999 usd', style: blue),
+                            const Text('i phone 11 pro', style: black),
+                            const Text('999 usd', style: blue),
                           ],
                         ),
                       ),
@@ -73,9 +74,9 @@ class _CheckoutState extends State<check_out> {
                     style: TextStyle(fontWeight: FontWeight.bold)),
                 const Text('Visa **** 6789'),
                 const SizedBox(height: 32),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text('Total',
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     Text('USD 999',
@@ -95,6 +96,7 @@ class _CheckoutState extends State<check_out> {
                       _isLoading = false;
                     });
 
+                    // ignore: use_build_context_synchronously
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const success()),

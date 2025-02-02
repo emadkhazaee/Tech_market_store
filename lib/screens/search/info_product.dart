@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class info_product extends StatefulWidget {
   const info_product({super.key});
 
@@ -8,6 +9,7 @@ class info_product extends StatefulWidget {
   State<info_product> createState() => _info_productState();
 }
 
+// ignore: camel_case_types
 class _info_productState extends State<info_product> {
   int selectedIndex = 0;
   List<String> names = ['64GB', '128GB', '256GB'];
@@ -37,7 +39,7 @@ class _info_productState extends State<info_product> {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(
@@ -63,7 +65,7 @@ class _info_productState extends State<info_product> {
                       ),
                     ),
                     const SizedBox(height: 40),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text('Capacity:', style: black),
@@ -107,6 +109,7 @@ class _info_productState extends State<info_product> {
                           _isLoading = false;
                         });
 
+                        // ignore: use_build_context_synchronously
                         showDialog(
                           context: context,
                           builder: (BuildContext context) {

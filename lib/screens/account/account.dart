@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class account extends StatelessWidget {
   const account({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const AccountScreen(),
+      home: AccountScreen(),
     );
   }
 }
@@ -41,16 +42,16 @@ class AccountScreen extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
                   ),
-                  child: Row(
+                  child: const Row(
                     children: [
-                      const CircleAvatar(
+                      CircleAvatar(
                         radius: 20.0,
                         backgroundImage: AssetImage('assets/images/pic.png'),
                       ),
-                      const SizedBox(width: 16.0),
+                      SizedBox(width: 16.0),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             'James Warden',
                             style: TextStyle(
@@ -71,22 +72,27 @@ class AccountScreen extends StatelessWidget {
                 child: ListView(
                   children: [
                     InkWell(
-                        onTap: () {}, child: AccountListItem(title: 'Orders')),
-                    SizedBox(height: 20.0),
+                        onTap: () {},
+                        child: const AccountListItem(title: 'Orders')),
+                    const SizedBox(height: 20.0),
                     InkWell(
                         onTap: () {},
-                        child: AccountListItem(title: 'Returns and refunds')),
-                    SizedBox(height: 20.0),
+                        child: const AccountListItem(
+                            title: 'Returns and refunds')),
+                    const SizedBox(height: 20.0),
                     InkWell(
                         onTap: () {},
-                        child: AccountListItem(title: 'Account information')),
-                    SizedBox(height: 20.0),
+                        child: const AccountListItem(
+                            title: 'Account information')),
+                    const SizedBox(height: 20.0),
                     InkWell(
                         onTap: () {},
-                        child: AccountListItem(title: 'Security and settings')),
-                    SizedBox(height: 20.0),
+                        child: const AccountListItem(
+                            title: 'Security and settings')),
+                    const SizedBox(height: 20.0),
                     InkWell(
-                        onTap: () {}, child: AccountListItem(title: 'Help')),
+                        onTap: () {},
+                        child: const AccountListItem(title: 'Help')),
                   ],
                 ),
               ),

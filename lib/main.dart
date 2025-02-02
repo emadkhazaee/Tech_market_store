@@ -21,8 +21,8 @@ class _MyAppState extends State<MyApp> {
   final List<Widget> _pages = [
     const home(),
     const search(),
-    check_out(),
-    account(),
+    const check_out(),
+    const account(),
   ];
 
   void _onItemTapped(int index) {

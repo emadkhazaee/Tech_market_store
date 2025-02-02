@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_market/screens/search/info_product.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class search extends StatelessWidget {
   const search({super.key});
 
@@ -13,7 +14,7 @@ class search extends StatelessWidget {
         padding: const EdgeInsets.all(24.0),
         child: Column(
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
@@ -22,19 +23,19 @@ class search extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             TextField(
               decoration: InputDecoration(
-                labelStyle: TextStyle(color: Colors.white),
+                labelStyle: const TextStyle(color: Colors.white),
                 hintText: 'Search here...',
-                hintStyle: TextStyle(color: const Color(0xFF0001FC)),
-                fillColor: Color(0xFFE0ECF8),
+                hintStyle: const TextStyle(color: Color(0xFF0001FC)),
+                fillColor: const Color(0xFFE0ECF8),
                 filled: true,
-                prefixIcon: Icon(
+                prefixIcon: const Icon(
                   Icons.search,
-                  color: const Color(0xFF0001FC),
+                  color: Color(0xFF0001FC),
                 ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
@@ -50,10 +51,10 @@ class search extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
@@ -62,13 +63,15 @@ class search extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             InkWell(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => info_product()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const info_product()));
               },
               child: Container(
                 height: 105,
@@ -97,9 +100,9 @@ class search extends StatelessWidget {
                         width: 80,
                       ),
                     ),
-                    Center(
+                    const Center(
                       child: Column(
-                        children: const [
+                        children: [
                           Padding(
                             padding: EdgeInsets.only(
                               top: 20,

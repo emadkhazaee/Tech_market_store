@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class success extends StatefulWidget {
   const success({super.key});
 
@@ -8,6 +9,7 @@ class success extends StatefulWidget {
   State<success> createState() => _successState();
 }
 
+// ignore: camel_case_types
 class _successState extends State<success> {
   int _countdown = 3;
 

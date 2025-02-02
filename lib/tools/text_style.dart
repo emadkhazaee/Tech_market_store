@@ -53,6 +53,7 @@ const small_black = TextStyle(
   fontSize: 12,
   color: Color(0xFFA7A9BE),
 );
+// ignore: constant_identifier_names
 const small_black_white = TextStyle(
   fontSize: 12,
   color: Color(0xFFE0ECF8),

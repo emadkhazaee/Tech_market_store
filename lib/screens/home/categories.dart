@@ -63,8 +63,8 @@ class CategoryItem extends StatelessWidget {
             style: black,
           ),
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => laptop()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const laptop()));
           },
         ),
       ),

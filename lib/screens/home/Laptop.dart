@@ -1,14 +1,16 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:tech_market/tools/text_style.dart';
 
+// ignore: camel_case_types
 class laptop extends StatelessWidget {
   const laptop({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const LaptopScreen(),
+      home: LaptopScreen(),
     );
   }
 }
@@ -116,7 +118,7 @@ class ProductItem extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Image.asset(image, fit: BoxFit.cover, height: 120),
